@@ -1,6 +1,8 @@
 # PaymentBot ![.NET Core](https://github.com/immmdreza/PaymentBot/workflows/.NET%20Core/badge.svg)
 Telegram bot for payments using Zarinpal gateway, and Webhooks
 
+**ASP .NET Core 3.1 MVC & Entity Framework Core**
+
 ## Setup
 1. Be aware of installed packages :
    * [Telagram.Bot](https://github.com/TelegramBots/telegram.bot)
