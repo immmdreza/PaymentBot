@@ -240,7 +240,7 @@ namespace PaymentBot.Controllers
                                     {
                                         Amount = amount,
                                         Description = description,
-                                        CallbackUrl = $"https://api.tsww.website/Verify/Index",
+                                        CallbackUrl = $"https://yourHost/Verify/Index",
                                         Email = "",
                                         Mobile = callback.From.Id.ToString()
 
