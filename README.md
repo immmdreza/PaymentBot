@@ -10,6 +10,7 @@ Telegram bot for payments using Zarinpal gateway, and Webhooks
    * [Microsoft.EntityFrameworkCore.Tools](https://docs.microsoft.com/en-gb/ef/core/) (required only if you gonna setup and update database using *Migration Tools*)
    * [Microsoft.AspNetCore.Mvc.NewtonsoftJson](https://www.asp.net/web-api)
    * [Microsoft.AspNet.WebApi.Client](https://www.asp.net/web-api)
+   * And Zarinpal Service is a copy of [Msh.Zarinpal.Api](https://github.com/hrsh/Msh.Zarinpal.Api) with a bit changes
    
 2. Edit *appsettings.json* and with your own connectionString and ZarinpalToken **(yourMerchantID)**
 
