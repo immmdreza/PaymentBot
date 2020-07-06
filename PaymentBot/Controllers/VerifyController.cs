@@ -13,7 +13,7 @@ namespace PaymentBot.Controllers
     [RequireHttps]
     public class VerifyController : Controller
     {
-        private static readonly TelegramBotClient botClient = new TelegramBotClient("1074877476:AAH83JPEgRH-qzpx9qzplEfBhU_9PbLmYiE");
+        private static readonly TelegramBotClient botClient = new TelegramBotClient("botToken");
         private readonly IZarinpalProvider _zarinpal;
         private readonly PaymentContext _paymentContext;
 
