@@ -1,0 +1,76 @@
+﻿@model PaymentBot.Models.PayResult;
+@{
+    Layout = null;
+    var divClass = Model.success ? "suc" : "fail";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✅ تایید تراکنش</title>
+    <link href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Harmattan', sans-serif;
+            color: darkorange;
+        }
+
+        .suc {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-style: dashed;
+            border-radius: 10px;
+            background-color:darkgreen;
+            color:white;
+        }
+
+        .fail {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-style: dashed;
+            border-radius: 10px;
+            background-color:darkorange;
+            color: white;
+        }
+
+        .but{
+            margin-top: 30px;
+        }
+    </style>
+
+    <div class="@divClass">
+        <h1>تایید تراکنش</h1>
+        <hr />
+
+        @if (Model.success)
+        {
+            <h3 style="color:darkgreen">.تراکنش موفق بود</h3>
+            <p>@Model.Result</p>
+            <p>شماره پیگیری : <b>@Model.referenceId</b></p>
+        }
+        else
+        {
+            <h3 style="color:darkred">.تراکنش ناموفق بود</h3>
+            <p>@Model.Result</p>
+            @if (!string.IsNullOrEmpty(Model.referenceId))
+            {
+                <p>شماره پیگیری : <b>@Model.referenceId</b></p>
+            }
+        }
+
+        <a class="but" href="https://t.me/tspaybot">بازگشت به ربات</a>
+    </div>
+</body>
+</html>
