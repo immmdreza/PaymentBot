@@ -17,5 +17,7 @@ Telegram bot for payments using Zarinpal gateway, and Webhooks
 
 4. Setup webhook for your telegram bot to UpdateController
 
-5. It's probably ready for publish.
+5. Also you can edit view of home and verify pages in Views Folder
+
+6. It's probably ready for publish.
 
